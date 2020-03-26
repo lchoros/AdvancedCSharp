@@ -11,12 +11,9 @@ namespace ReverseString
         static void Main(string[] args)
         {
             string input = Console.ReadLine();
-            Stack<string> lettersStack = new Stack<string>();
-            for (int i = 0; i < input.Length; i++)
-            {
-                lettersStack.Push(input[i].ToString());
-            }
-            for (int i = 0; i < lettersStack.Count; i++)
+            Stack<char> lettersStack = new Stack<char>(input);
+
+            while (lettersStack.Count != 0)
             {
                 Console.Write(lettersStack.Pop());
             }
