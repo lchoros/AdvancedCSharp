@@ -34,6 +34,12 @@ namespace MaximumElement
                     if (stak.Any())
                     {
                         Console.WriteLine(stak.Max());
+                    }
+                }
+                else if (queryType == 4)
+                {
+                    if (stak.Any())
+                    {
                         Console.WriteLine(stak.Min());
                     }
                 }

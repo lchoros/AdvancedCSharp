@@ -10,7 +10,8 @@ namespace ReverseNumbers
     {
         static void Main(string[] args)
         {
-            Stack<int> stak = new Stack<int>(input));
+            var input = Console.ReadLine().Split(' ').Select(int.Parse);
+            Stack<int> stak = new Stack<int>(input);
             StringBuilder sb = new StringBuilder();
             while (stak.Count > 0)
             {
